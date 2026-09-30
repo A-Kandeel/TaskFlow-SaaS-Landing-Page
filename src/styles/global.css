@@ -1,0 +1,55 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Poppins';
+  /* font-family: 'Inter'; */
+  background: var(--bg-color);
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* End Global Rules */
+/* Start Button */
+.button {
+  display: inline-flex;
+  gap: 9px;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 14px;
+  border-radius: 12px;
+  place-items: center;
+  border: 1px solid var(--ink);
+  box-shadow: 0 8px 18px rgba(21, 22, 23, .11);
+  transition: .2s;
+}
+.button-primary {
+  background: var(--dark);
+  color: #fff;
+}
+.button-primary i {
+  font-size: 12px;
+}
+.button-secondary {
+  background-color: transparent;
+  border: 2px solid #6C63FF;
+  color: #6C63FF;
+}
+.button-primary:hover {
+  transform: translateY(-2px);
+  background: #252927;}
+.button-secondary:hover {
+  background-color: #6C63FF;
+  color: white;
+}
+/* End Button */
