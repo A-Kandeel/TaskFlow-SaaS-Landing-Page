@@ -1,6 +1,6 @@
 const TrustedCompanies = () => {
   return (
-    <div className="trusted container">
+    <div className="trusted">
       <h3 className="subTitle text-center">Built for modern teams</h3>
       <div className="companies">
         <span>northstar</span>

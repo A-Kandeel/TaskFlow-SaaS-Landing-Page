@@ -14,7 +14,7 @@ const Hero = () => {
         <div className="btn-box">
           <Button>Start Building For Free</Button>
           <span className="play">
-            <span><i class="fas fa-play"></i></span>
+            <span><i className="fas fa-play"></i></span>
             See how it works
           </span>
         </div>
@@ -80,7 +80,7 @@ const Hero = () => {
           </div>
           <div className="card-bottom">
             <div className="box">
-              <i class="far fa-clock"></i>
+              <i className="far fa-clock"></i>
               <span>Generated in 4.2s</span>
             </div>
             <Button>Try the workflow</Button>

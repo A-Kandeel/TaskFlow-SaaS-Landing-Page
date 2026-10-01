@@ -9,10 +9,10 @@ const NavBar = () => {
           <span className="brand">TaskFlow</span>
         </a>
         <ul>
-          <li>Features</li>
-          <li>Pricing</li>
-          <li>FAQ</li>
-          <li>Contact</li>
+          <li><a href="#Features">Features</a></li>
+          <li><a href="#Features">Pricing</a></li>
+          <li><a href="#Features">FAQ</a></li>
+          <li><a href="#Features">Contact</a></li>
         </ul>
         <div className="btn-box">
           <a className="login" href="#contact">Log In</a>

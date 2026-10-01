@@ -24,20 +24,9 @@
     display: none !important;
   }
 }
-/* @media (min-width: 840px) {
+@media (min-width: 1024px) {
   .container {
-    width: 800px;
-  }
-  .visible-smd {
-    display: block !important;
-  }
-  .hidden-smd {
-    display: none !important;
-  }
-} */
-@media (min-width: 992px) {
-  .container {
-    width: 952px;
+    width: 984px;
   }
   .visible-md {
     display: block !important;
@@ -46,9 +35,9 @@
     display: none !important;
   }
 }
-@media (min-width: 1200px) {
+@media (min-width: 1280px) {
   .container {
-    width: 1160px;
+    width: 1240px;
   }
   .visible-lg {
     display: block !important;
