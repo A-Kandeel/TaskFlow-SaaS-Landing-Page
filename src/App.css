@@ -3,7 +3,7 @@
 
 :root {
   --main-color: #6C63FF;
-  --sec-color: #6366F1;
+  --sec-color: #303630;
   --accent: #b9f34a;
   --bg-color: #f6f6f3;
   --dark: #151617;
@@ -11,6 +11,7 @@
   --text-color2: #fff;
   --section-padding: 100px;
   --main-transition: 0.3s;
+  --letter-space: 1.35px;
 }
 /* Start NavBar */
 .nav-wrap {
@@ -26,7 +27,6 @@
   padding: 21px 0 !important;
   align-items: center;
   justify-content: space-between;
-  /* border-bottom: 1px solid #e2e3ded9; */
 }
 .navbar .logo {
   display: flex;
@@ -70,3 +70,253 @@
   color: var(--dark);
 }
 /* End NavBar */
+/* Start Hero */
+.hero {
+  display: grid;
+  gap: 20px;
+  grid-auto-flow: column;
+  padding: var(--section-padding) 0;
+}
+.hero .text .eye-brrow {
+  display: inline-flex;
+  gap: 8px;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--text-color);
+  align-items: center;
+  letter-spacing: var(--letter-space);
+  text-transform: uppercase;
+}
+.hero .text .eye-brrow span {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #77a91e;
+  box-shadow: 0 0 0 5px rgba(185, 243, 74, .24);
+}
+.hero .text .sec-title {
+  font-size: 56px;
+  max-width: 700px;
+}
+.hero .text .sec-title span {
+  display: block;
+  color: #587717;
+}
+.hero .text .main-p {
+  margin: 27px 0;
+  font-size: 19px;
+  max-width: 630px;
+}
+.hero .text .btn-box {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+}
+.hero .text .btn-box .play {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 15px;
+  font-weight: 600;
+}
+.hero .text .btn-box .play:hover {
+  gap: 12px;
+}
+.hero .text .btn-box .play span {
+  display: grid;
+  width: 27px;
+  height: 27px;
+  font-size: 13px;
+  border-radius: 50%;
+  place-items: center;
+  border: 1.1px solid #e2e3de;
+}
+.hero .text .proof-box {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-top: 35px;
+}
+.hero .text .proof-box .avatars {
+  display: flex;
+}
+.hero .text .proof-box .avatars .person-ico {
+  display: grid;
+  width: 29px;
+  height: 29px;
+  margin-left: -7px;
+  font-size: 8px;
+  border-radius: 50%;
+  place-items: center;
+  color: var(--text-color2);
+  border: 1.1px solid var(--bg-color);
+}
+.hero .text .proof-box .avatars .person-ico:nth-child(1) {
+  margin: 0;
+  background-color: #202420;
+}
+.hero .text .proof-box .avatars .person-ico:nth-child(2) {
+  background-color: #777;
+}
+.hero .text .proof-box .avatars .person-ico:nth-child(3) {
+  background-color: #9d8;
+}
+.hero .text .proof-box .avatars .person-ico:last-child {
+  color: var(--text-color2);
+  background-color: var(--accent);
+  font-size: 10px;
+}
+.hero .text .proof-box .text-box strong {
+  font-size: 12px;
+}
+.hero .text .proof-box .text-box p {
+  font-size: 11px;
+  margin-top: 2px;
+}
+.hero .visual .ai-card {
+  color: var(--bg-color);
+  padding: 26px;
+  border-radius: 27px;
+  transform: rotate(1deg);
+  border: 1px solid #343934;
+  background: rgba(17, 20, 17, .98);
+  box-shadow: 0 35px 90px rgba(26, 35, 27, .24);
+}
+.hero .ai-card .card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.hero .ai-card .card-top .text p {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: var(--letter-space);
+}
+.hero .ai-card .card-top .text .header {
+  font-size: 23px;
+  margin-top: 6px;
+}
+.hero .ai-card .card-top .dot {
+  font-size: 9px;
+  padding: 6px 8px;
+  border: 1px solid var(--sec-color);
+  border-radius: 999px;
+  color: var(--accent);
+  letter-spacing: .08em;
+}
+.hero .ai-card .prompt-row {
+  display: flex;
+  gap: 12px;
+  padding: 15px;
+  margin-top: 28px;
+  border-radius: 15px;
+  background: #1b201c;
+  border: 1px solid var(--sec-color);
+}
+.hero .ai-card .prompt-row .icon {
+  width: 29px;
+  height: 29px;
+  border-radius: 9px;
+  background: var(--sec-color);
+  display: grid;
+  place-items: center;
+  color: var(--accent);
+}
+.hero .ai-card .prompt-row span {
+  font-size: 8px;
+}
+.hero .ai-card .prompt-row p {
+  margin: 5px 0 0;
+  font-size: 12px;
+  line-height: 1.55;
+  color: #d8ddd9;
+}
+.hero .ai-card .divider {
+  height: 1px;
+  background: var(--sec-color);
+  margin: 20px 0;
+}
+.hero .ai-card .progress {
+  display: grid;
+  grid-template-columns: 34px 1fr 30px;
+  gap: 10px;
+  align-items: center;
+}
+.hero .ai-card .progress .person-ico {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: var(--accent);
+  color: var(--dark);
+  display: grid;
+  place-items: center;
+  font-size: 13px;
+  font-weight: 600;
+}
+.hero .ai-card .progress .title {
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.hero .ai-card .progress .progress-line {
+  height: 5px;
+  background: var(--sec-color);
+  border-radius: 999px;
+  overflow: hidden;
+}
+.hero .ai-card .progress .progress-line span {
+  display: block;
+  width: 82%;
+  height: 100%;
+  background: var(--accent);  
+}
+.hero .ai-card .progress .percntage {
+  font-size: 12px;
+  color: var(--accent);
+  text-align: right;
+}
+.hero .ai-card .cards-holder {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+.hero .ai-card .cards-holder .card {
+  background: #171c18;
+  border: 1px solid var(--sec-color);
+  border-radius: 14px;
+  padding: 13px;
+}
+.hero .ai-card .cards-holder .card span {
+  font-size: 9px;
+  color: var(--accent);
+  display: block;
+}
+.hero .ai-card .cards-holder .card h3 {
+  font-size: 12px;
+  margin-top: 7px;
+}
+.hero .ai-card .cards-holder .card p {
+  font-size: 9px;
+  margin: 5px 0 0;
+}
+.hero .ai-card .card-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 19px;
+  padding-top: 17px;
+  border-top: 1px solid var(--sec-color);
+  color: var(--text-color);
+  font-size: 10.5px;
+}
+.hero .ai-card .card-bottom .box {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+.hero .ai-card .card-bottom Button {
+  font-size: 12px;
+}
+/* End Hero */
