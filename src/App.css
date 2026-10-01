@@ -73,9 +73,9 @@
 /* Start Hero */
 .hero {
   display: grid;
-  gap: 20px;
-  grid-auto-flow: column;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   padding: var(--section-padding) 0;
+  gap: 35px;
 }
 .hero .text .eye-brrow {
   display: inline-flex;
@@ -320,3 +320,28 @@
   font-size: 12px;
 }
 /* End Hero */
+/* Start TrustedCompanies */
+.trusted {
+  padding: 25px 0;
+  border-top: 1px solid #e2e3de;
+  border-bottom: 1px solid #e2e3de;
+  font-family: 'inter';
+}
+.trusted .subTitle {
+  font-size: 11px;
+  font-weight: 500;
+  color: #8b908d;
+  margin-bottom: 25px;
+  text-transform: uppercase;
+  letter-spacing: var(--letter-space);
+}
+.trusted .companies {
+  display: flex;
+  font-size: 16px;
+  font-weight: 600;
+  color: #858a87;
+  align-items: center;
+  letter-spacing: -.04em;
+  justify-content: space-evenly;
+}
+/* End TrustedCompanies */
