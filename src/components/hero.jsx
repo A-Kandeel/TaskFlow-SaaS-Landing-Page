@@ -1,4 +1,5 @@
 import Button from "./button";
+import {Sparkles} from "lucide-react";
 
 const Hero = () => {
   return (
@@ -41,7 +42,7 @@ const Hero = () => {
               <span className="dot">Live</span>
           </div>
           <div className="prompt-row">
-            <div className="icon">✨</div>
+            <div className="icon"><Sparkles /></div>
             <div className="text">
               <span className="desc">YOUR BRIEF</span>
               <p>

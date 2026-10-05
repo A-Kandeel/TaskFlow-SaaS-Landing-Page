@@ -1,6 +1,7 @@
 import NavBar from  "./components/navbar";
 import Hero from  "./components/hero";
 import TrustedCompanies from "./components/TrustedCompanies";
+import Features from "./components/Features/features";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <NavBar />
       <Hero />
       <TrustedCompanies />
+      <Features />
     </div>
   );
 }
