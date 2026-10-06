@@ -359,11 +359,11 @@
 }
 .features .card-container .card {
   display: flex;
-  flex-direction: column;
-  fle
   padding: 25px;
   min-height: 270px;
   border-radius: 19px;
+  flex-direction: column;
+  align-items: flex-start;
   background: #ffffff8c;
   border: 1px solid var(--line);
 }
@@ -399,3 +399,100 @@
   background-color: var(--bg-color);
 }
 /* End Features */
+/* Start Pricing */
+.pricing header > .sec-header {
+  margin: 0;
+}
+.pricing header > .sec-header h2 {
+  text-wrap: wrap;
+}
+.pricing header .btn-box {
+  display: flex;
+  gap: 5px;
+  margin: 24px 0 50px;
+  justify-content: center;
+}
+.pricing header .btn-box .btn {
+  border: 1px solid var(--line);
+  background: #fff;
+  border-radius: 999px;
+  padding: 9px 13px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #666d68;
+  cursor: pointer;
+}
+.pricing header .btn-box .active {
+  color: var(--text-color2);
+  background: var(--dark);
+  border-color: var(--dark);
+}
+.pricing header .btn-box em {
+  font-style: normal;
+  color: #bfe774;
+  font-size: 9px;
+  margin-left: 4px;
+}
+.pricing .card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+.pricing .card-container .card {
+  position: relative;
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  background: var(--text-color2);
+  padding: 28px;
+}
+.pricing .card-container .card h3 {
+  margin: 0;
+  font-size: 22px;
+  letter-spacing: -.055em;
+}
+.pricing .card-container .card p {
+  font-size: 12px;
+  min-height: 58px;
+}
+.pricing .card-container .card .price {
+  font-size: 44px;
+  font-weight: 500;
+  letter-spacing: -.015em;
+  display: flex;
+  gap: 5px;
+  margin: 24px 0;
+  align-items: baseline;
+}
+.pricing .card-container .card .price .payment-per {
+  color: #7b837d;
+  font-size: 11px;
+}
+.pricing .card-container .card .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid var(--line);
+  border-radius: 11px;
+  padding: 12px;
+  font-weight: 700;
+  font-size: 12px;
+  background: var(--bg-color);
+  color: var(--dark);
+  width: 100%;
+}
+.pricing .card-container .card .feat-list {
+  display: grid;
+    gap: 11px;
+    margin-top: 23px;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+}
+.pricing .card-container .card .feat-list li {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  font-size: 11px;
+  color: var(--text-color);
+}
+/* End Pricing */

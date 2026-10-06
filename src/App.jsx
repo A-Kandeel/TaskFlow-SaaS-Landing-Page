@@ -2,6 +2,7 @@ import NavBar from  "./components/navbar";
 import Hero from  "./components/hero";
 import TrustedCompanies from "./components/TrustedCompanies";
 import Features from "./components/Features/features";
+import Pricing from "./components/Pricing/pricing";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Hero />
       <TrustedCompanies />
       <Features />
+      <Pricing />
     </div>
   );
 }
