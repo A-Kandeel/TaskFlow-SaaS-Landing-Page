@@ -4,6 +4,7 @@ import TrustedCompanies from "./components/TrustedCompanies";
 import Features from "./components/Features/features";
 import Pricing from "./components/Pricing/pricing";
 import FaQ from "./components/FAQ/faq";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <Features />
       <Pricing />
       <FaQ />
+      <Footer />
     </div>
   );
 }
