@@ -3,6 +3,7 @@ import Hero from  "./components/hero";
 import TrustedCompanies from "./components/TrustedCompanies";
 import Features from "./components/Features/features";
 import Pricing from "./components/Pricing/pricing";
+import FaQ from "./components/FAQ/faq";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <TrustedCompanies />
       <Features />
       <Pricing />
+      <FaQ />
     </div>
   );
 }

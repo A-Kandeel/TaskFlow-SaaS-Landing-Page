@@ -496,3 +496,42 @@
   color: var(--text-color);
 }
 /* End Pricing */
+/* Start FaQ */
+.faq {
+  padding: var(--section-padding) 0;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 80px;
+}
+.faq > header .sec-header {
+  text-align: left;
+}
+.faq > header .sec-header h2 {
+  text-wrap: wrap;
+}
+.faq .faq-list {
+  border-top: 1px solid var(--line);
+}
+.faq .faq-list .faq-item {
+  border-bottom: 1px solid var(--line);
+}
+.faq .faq-list .faq-item button {
+  width: 100%;
+  border: none;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+}
+.faq .faq-list .faq-item > .desc {
+  font-size: 13px;
+  max-width: 680px;
+  margin: 0 0 20px;
+}
+
+/* End FaQ */
