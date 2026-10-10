@@ -399,6 +399,60 @@
   background-color: var(--bg-color);
 }
 /* End Features */
+/* Start HowItWorks */
+.howItworks {
+  padding: var(--section-padding) 0;
+}
+.howItworks h2 {
+  text-align: center;
+  margin-bottom: 35px;
+  font-weight: 700;
+  line-height: 1.02;
+  letter-spacing: -.055em;
+  font-size: clamp(38px, 4.7vw, 58px);
+}
+.howItworks .col-grid {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(3, minmax(auto, 1fr));
+}
+.howItworks .col-grid .col {
+  position: relative;
+  text-align: center;
+}
+.howItworks .col-grid .col::after {
+  content: "";
+  display: block;
+  width: 80%;
+  height: 1px;
+  position: absolute;
+  left: 58%;
+  top: 15%;
+  background-color: #8296668a;
+  z-index: -1;
+}
+.howItworks .col-grid .col:last-child::after {
+  display: none;
+}
+.howItworks .col-grid .col span {
+  font-weight: 600;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 16px;
+  width: 48px;
+  height: 48px;
+  background-color: var(--accent);
+  border-radius: 50%;
+}
+.howItworks .col-grid .col h3 {
+  margin-bottom: 8px;
+}
+.howItworks .col-grid .col p {
+  font-size: 14px;
+}
+/* End HowItWorks */
 /* Start Pricing */
 .pricing header > .sec-header {
   margin: 0;

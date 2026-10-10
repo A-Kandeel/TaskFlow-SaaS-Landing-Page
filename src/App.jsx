@@ -2,6 +2,7 @@ import NavBar from  "./components/navbar";
 import Hero from  "./components/hero";
 import TrustedCompanies from "./components/TrustedCompanies";
 import Features from "./components/Features/features";
+import HowItWorks from "./components/howitworks";
 import Pricing from "./components/Pricing/pricing";
 import FaQ from "./components/FAQ/faq";
 import Footer from "./components/footer";
@@ -13,6 +14,7 @@ function App() {
       <Hero />
       <TrustedCompanies />
       <Features />
+      <HowItWorks />
       <Pricing />
       <FaQ />
       <Footer />
