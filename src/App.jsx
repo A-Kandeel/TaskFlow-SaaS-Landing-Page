@@ -5,6 +5,7 @@ import Features from "./components/Features/features";
 import HowItWorks from "./components/howitworks";
 import Pricing from "./components/Pricing/pricing";
 import FaQ from "./components/FAQ/faq";
+import CTA from "./components/cta";
 import Footer from "./components/footer";
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <HowItWorks />
       <Pricing />
       <FaQ />
+      <CTA />
       <Footer />
     </div>
   );

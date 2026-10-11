@@ -129,3 +129,11 @@
   height: 400px;
   width: 100%;
 }
+.up {
+  position: relative;
+  z-index: 51;
+}
+.down {
+  position: relative;
+  z-index: 1;
+}
