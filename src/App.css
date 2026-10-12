@@ -400,9 +400,6 @@
 }
 /* End Features */
 /* Start HowItWorks */
-.howItworks {
-  padding: var(--section-padding) 0;
-}
 .howItworks h2 {
   text-align: center;
   margin-bottom: 35px;
@@ -453,6 +450,67 @@
   font-size: 14px;
 }
 /* End HowItWorks */
+/* Start testimonial */
+.testimonials {
+  padding: var(--section-padding) 0;
+}
+.testimonials > .sec-header h2 {
+  text-wrap: wrap;
+}
+.testimonials .testimonials-box {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(auto, 1fr));
+  gap: 16px;
+}
+.testimonials .testimonials-box .card {
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: #fff;
+  padding: 25px;
+  min-height: 270px;
+  display: flex;
+  flex-direction: column;
+}
+.testimonials .testimonials-box .card .stars {
+  letter-spacing: 2px;
+  font-size: 12px;
+  color: #7ba220;
+}
+.testimonials .testimonials-box .card .comment {
+  font-size: 21px;
+  line-height: 1.25;
+  letter-spacing: -.035em;
+  margin: 25px 0;
+  font-weight: 600;
+}
+.testimonials .testimonials-box .card .user {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.testimonials .card .user .avatar {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background: #e9efdf;
+  display: grid;
+  place-items: center;
+  font-size: 9px;
+  font-weight: 800;
+}
+.testimonials .card .user .person strong, .card .user .person strong {
+  display: block;
+}
+.testimonials .card .user .person strong {
+  font-size: 11px;
+}
+.testimonials .card .user .person span {
+  font-size: 9px;
+  color: var(--text-color);
+  margin-top: 2px;
+}
+/* End testimonial */
 /* Start Pricing */
 .pricing header > .sec-header {
   margin: 0;

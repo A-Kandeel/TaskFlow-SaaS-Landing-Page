@@ -3,6 +3,7 @@ import Hero from  "./components/hero";
 import TrustedCompanies from "./components/TrustedCompanies";
 import Features from "./components/Features/features";
 import HowItWorks from "./components/howitworks";
+import Testimonials from "./components/testimonials/testimonials";
 import Pricing from "./components/Pricing/pricing";
 import FaQ from "./components/FAQ/faq";
 import CTA from "./components/cta";
@@ -16,6 +17,7 @@ function App() {
       <TrustedCompanies />
       <Features />
       <HowItWorks />
+      <Testimonials />
       <Pricing />
       <FaQ />
       <CTA />
