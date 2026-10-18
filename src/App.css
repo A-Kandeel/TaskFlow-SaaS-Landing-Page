@@ -58,7 +58,7 @@
   padding: 0 15px 3px;
   color: var(--text-color);
 }
-.navbar ul li:hover {
+.navbar ul li:hover a {
   color: var(--dark);
 }
 .navbar .btn-box .login {
@@ -399,6 +399,144 @@
   background-color: var(--bg-color);
 }
 /* End Features */
+/* Start Demo */
+.demo {
+  padding: var(--section-padding) 0;
+}
+.demo .demo-overlay {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  gap: 40px;
+  background: linear-gradient(120deg, #e9efdf 0%, #f8f8f4 58%);
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  padding: 50px;
+}
+.demo .demo-overlay .text > .sec-header {
+  text-align: left;
+}
+.demo .demo-overlay .text > .sec-header h2 {
+  text-wrap: wrap;
+}
+.demo .text .btn-box {
+  display: flex;
+  gap: 7px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+.demo .text .btn-box button {
+  border: 1px solid var(--line);
+  background: #fff;
+  border-radius: 999px;
+  padding: 9px 13px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #666d68;
+  cursor: pointer;
+}
+.demo .text .btn-box > .active {
+  background: var(--dark);
+  color: #fff;
+  border-color: var(--dark);
+}
+.demo .demo-overlay .AI-Card {
+  background: #141814;
+  color: #fff;
+  border-radius: 20px;
+  padding: 21px;
+  border: 1px solid #2e342f;
+  box-shadow: 0 18px 60px rgba(24, 32, 23, .10);
+}
+.demo .AI-Card .desc {
+  font-size: 9px;
+}
+.demo .AI-Card textarea {
+  width: 100%;
+  resize: none;
+  margin-top: 11px;
+  background: #1c211d;
+  border: 1px solid #303631;
+  border-radius: 13px;
+  padding: 14px;
+  color: #eef2ee;
+  line-height: 1.6;
+  outline: none;
+}
+.demo .AI-Card .console-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 12px;
+}
+.demo .AI-Card .console-bottom span {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #98a19a;
+  font-size: 10px;
+}
+.demo .AI-Card .console-bottom button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  background: var(--ink);
+  color: var(--text-color2);
+  border: 1px solid var(--ink);
+  padding: 13px 18px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 14px;
+  box-shadow: 0 8px 18px rgba(21, 22, 23, .11);
+  transition: .2s;
+  padding: 10px 14px;
+  cursor: pointer;
+}
+.demo .AI-Card .generated {
+  margin-top: 15px;
+  background: #1b211c;
+  border: 1px solid #354038;
+  border-radius: 15px;
+  padding: 15px;
+}
+.demo .AI-Card .generated .generated-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--accent);
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: .08em;
+}
+.demo .AI-Card .generated .generated-head span:first-child {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.demo .AI-Card .generated p {
+  font-size: 12px;
+  line-height: 1.65;
+  color: #dde2dd;
+}
+.demo .AI-Card .generated .output-lines {
+  display: grid;
+  gap: 7px;
+}
+.demo .AI-Card .generated .output-lines span {
+  height: 5px;
+  background: #2e372f;
+  border-radius: 99px;
+}
+.demo .AI-Card .generated .output-lines span:first-child {
+  width: 92%;
+}
+.demo .AI-Card .generated .output-lines span:nth-child(2) {
+  width: 77%;
+}
+.demo .AI-Card .generated .output-lines span:nth-child(3) {
+  width: 84%;
+}
+/* End Demo */
 /* Start HowItWorks */
 .howItworks h2 {
   text-align: center;
@@ -499,16 +637,18 @@
   font-size: 9px;
   font-weight: 800;
 }
-.testimonials .card .user .person strong, .card .user .person strong {
+.testimonials .card .user .person strong, 
+.card .user .person strong {
   display: block;
 }
 .testimonials .card .user .person strong {
   font-size: 11px;
 }
 .testimonials .card .user .person span {
+  display: block;
   font-size: 9px;
-  color: var(--text-color);
   margin-top: 2px;
+  color: var(--text-color);
 }
 /* End testimonial */
 /* Start Pricing */

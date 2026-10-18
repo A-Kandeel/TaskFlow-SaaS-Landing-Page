@@ -2,6 +2,7 @@ import NavBar from  "./components/navbar";
 import Hero from  "./components/hero";
 import TrustedCompanies from "./components/TrustedCompanies";
 import Features from "./components/Features/features";
+import Demo from "./components/Demo/demo";
 import HowItWorks from "./components/howitworks";
 import Testimonials from "./components/testimonials/testimonials";
 import Pricing from "./components/Pricing/pricing";
@@ -13,14 +14,17 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <Hero />
-      <TrustedCompanies />
-      <Features />
-      <HowItWorks />
-      <Testimonials />
-      <Pricing />
-      <FaQ />
-      <CTA />
+      <main>
+        <Hero />
+        <TrustedCompanies />
+        <Features />
+        <Demo />
+        <HowItWorks />
+        <Testimonials />
+        <Pricing />
+        <FaQ />
+        <CTA />
+      </main>
       <Footer />
     </div>
   );
