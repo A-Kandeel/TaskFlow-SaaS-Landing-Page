@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './styles/all.min.css';
-import './styles/MyFramework.css';
 import './styles/normalize.css';
+import './styles/all.min.css';
 import './styles/global.css';
+import './styles/MyFramework.css';
 import './App.css';
 import App from './App';
 // import reportWebVitals from './reportWebVitals';

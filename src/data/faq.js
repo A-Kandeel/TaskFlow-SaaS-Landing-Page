@@ -1,8 +1,8 @@
 export const faq = [
   {
     id: 1,
-    question: "Is Nexora just another AI chat app?",
-    answer: "No. The core idea is context + workflow. Instead of isolated prompts, Nexora turns recurring work into repeatable systems.",
+    question: "Is TaskFlow just another AI chat app?",
+    answer: "No. The core idea is context + workflow. Instead of isolated prompts, TaskFlow turns recurring work into repeatable systems.",
   },
   {
     id: 2,

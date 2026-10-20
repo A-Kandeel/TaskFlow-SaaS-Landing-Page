@@ -4,7 +4,7 @@ function Button({ children, variant = "primary", onClick }) {
         className={`button button-${variant}`}
         onClick={onClick}
         >
-        {children} <i className="fa fa-light fa-arrow-right"></i>
+        {children} <i className="fas fa-arrow-right"  aria-hidden="true"></i>
         </button>
     );
 }

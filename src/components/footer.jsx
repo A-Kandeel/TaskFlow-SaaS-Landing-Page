@@ -1,12 +1,11 @@
+import Logo from "./logo";
+
 const Footer = () => {
   return ( 
     <footer id="Contact">
       <div className="footer-grid container">
         <div className="col01">
-          <a href="#home" className="logo">
-            <span className="brand-mark">T</span>
-            <span className="brand">TaskFlow</span>
-          </a>
+          <Logo />
           <p className="desc">The AI-powered workspace for teams that want to move faster.</p>
         </div>
         <div className="col col02">

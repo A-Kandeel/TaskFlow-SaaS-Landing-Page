@@ -1,4 +1,3 @@
-/* @import url(../App.css); */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -8,23 +7,63 @@
 }
 html {
   scroll-behavior: smooth;
+  /* scroll-padding-top: 90px; */
 }
 body {
   font-family: 'Poppins';
   /* font-family: 'Inter'; */
   background: var(--bg-color);
+  overflow-x: clip;
 }
 li {
   list-style: none;
 }
 a {
+  -webkit-tap-highlight-color: transparent;
   text-decoration: none;
+}
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #829666;
+  outline-offset: 4px;
+}
+img,
+svg {
+  max-width: 100%;
+}
+button,
+input,
+textarea {
+  font: inherit;
 }
 .desc {
   color: var(--text-color);
   line-height: 1.65;
 }
 /* End Global Rules */
+/* Start Logo */
+.logo {
+  display: flex;
+  gap: 10px;
+  font-weight: 700;
+  align-items: center;
+  letter-spacing: -1px;
+}
+.logo .brand-mark {
+  width: 31px;
+  height: 31px;
+  display: grid;
+  font-size: 17px;
+  place-items: center;
+  border-radius: 10px;
+  color: var(--accent);
+  background: var(--dark);
+}
+.logo .brand {
+  font-size: 19px;
+  color: var(--dark);
+}
+/* End Logo */
 /* Start Button */
 .button {
   display: inline-flex;
@@ -72,9 +111,10 @@ a {
 }
 .sec-header h2 {
   margin: 13px 0;
+  max-width: 100%;
   line-height: 1.02;
+  text-wrap: balance;
   letter-spacing: -.055em;
-  text-wrap: nowrap;
   font-size: clamp(38px, 4.7vw, 58px);
 }
 .sec-header p {

@@ -24,34 +24,13 @@
 }
 .navbar {
   display: flex;
-  padding: 21px 0 !important;
+  position: relative;
+  padding-block: 21px;
   align-items: center;
   justify-content: space-between;
-}
-.navbar .logo {
-  display: flex;
-  gap: 10px;
-  font-weight: 700;
-  align-items: center;
-  letter-spacing: -1px;
-}
-.navbar .logo .brand-mark {
-  width: 31px;
-  height: 31px;
-  display: grid;
-  font-size: 17px;
-  place-items: center;
-  border-radius: 10px;
-  color: var(--accent);
-  background: var(--dark);
-}
-.navbar .logo .brand {
-  font-size: 19px;
-  color: var(--dark);
 }
 .navbar ul {
   display: flex;
-  justify-content: space-between;
 }
 .navbar ul li a {
   font-size: 15px;
@@ -69,12 +48,47 @@
 .navbar .btn-box .login:hover {
   color: var(--dark);
 }
+.navbar .toggle-menu {
+  border: none;
+  background: transparent;
+}
+@media (min-width: 768px) {
+  .navbar .toggle-menu {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .close {
+    display: none !important;
+  }
+  .navbar .show {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    padding: 12px 0 18px;
+    flex-direction: column;
+    width: calc(100% + 15px);
+    background-color: var(--bg-color);
+  }
+  .navbar .show li {
+    padding: 12px 0;
+    font-size: 14px;
+    border-bottom: 1px solid var(--line);
+  }
+  .navbar .show li:hover {
+    transform: translateX(5px);
+  }
+  .navbar .btn-box {
+    display: none;
+  }
+}
 /* End NavBar */
 /* Start Hero */
 .hero {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  padding: var(--section-padding) 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: var(--section-padding);
   gap: 35px;
 }
 .hero .text .eye-brrow {
@@ -278,7 +292,7 @@
 }
 .hero .ai-card .cards-holder {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 10px;
   margin-top: 20px;
 }
@@ -319,6 +333,11 @@
 .hero .ai-card .card-bottom Button {
   font-size: 12px;
 }
+@media (max-width: 767px) {
+  .hero {
+    flex-direction: column;
+  }
+}
 /* End Hero */
 /* Start TrustedCompanies */
 .trusted {
@@ -349,13 +368,12 @@
 /* End TrustedCompanies */
 /* Start Features */
 .features {
-  padding: var(--section-padding) 0;
+  padding-block: var(--section-padding);
 }
-/* .features {} */
 .features .card-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
 }
 .features .card-container .card {
   display: flex;
@@ -401,7 +419,7 @@
 /* End Features */
 /* Start Demo */
 .demo {
-  padding: var(--section-padding) 0;
+  padding-block: var(--section-padding);
 }
 .demo .demo-overlay {
   display: grid;
@@ -453,14 +471,15 @@
 .demo .AI-Card textarea {
   width: 100%;
   resize: none;
+  padding: 14px;
   margin-top: 11px;
+  outline: none;
+  color: #eef2ee;
+  line-height: 1.6;
   background: #1c211d;
   border: 1px solid #303631;
   border-radius: 13px;
-  padding: 14px;
-  color: #eef2ee;
-  line-height: 1.6;
-  outline: none;
+  box-sizing: border-box;
 }
 .demo .AI-Card .console-bottom {
   display: flex;
@@ -536,6 +555,13 @@
 .demo .AI-Card .generated .output-lines span:nth-child(3) {
   width: 84%;
 }
+@media (max-width: 767px) {
+  .demo .demo-overlay {
+    display: flex;
+    flex-direction: column;
+    padding-inline: 17px;
+  }
+}
 /* End Demo */
 /* Start HowItWorks */
 .howItworks h2 {
@@ -549,7 +575,7 @@
 .howItworks .col-grid {
   display: grid;
   gap: 15px;
-  grid-template-columns: repeat(3, minmax(auto, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 }
 .howItworks .col-grid .col {
   position: relative;
@@ -558,11 +584,11 @@
 .howItworks .col-grid .col::after {
   content: "";
   display: block;
+  top: 24px;
+  left: 60%;
   width: 80%;
   height: 1px;
   position: absolute;
-  left: 58%;
-  top: 15%;
   background-color: #8296668a;
   z-index: -1;
 }
@@ -587,17 +613,22 @@
 .howItworks .col-grid .col p {
   font-size: 14px;
 }
+@media (max-width: 767px) {
+  .howItworks .col-grid .col::after {
+    display: none;
+  }
+}
 /* End HowItWorks */
 /* Start testimonial */
 .testimonials {
-  padding: var(--section-padding) 0;
+  padding-block: var(--section-padding);
 }
 .testimonials > .sec-header h2 {
   text-wrap: wrap;
 }
 .testimonials .testimonials-box {
   display: grid;
-  grid-template-columns: repeat(3, minmax(auto, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 16px;
 }
 .testimonials .testimonials-box .card {
@@ -687,7 +718,7 @@
 }
 .pricing .card-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 16px;
 }
 .pricing .card-container .card {
@@ -750,10 +781,10 @@
 /* End Pricing */
 /* Start FaQ */
 .faq {
-  padding: var(--section-padding) 0;
+  padding-block: var(--section-padding);
   display: grid;
-  grid-template-columns: 40% 60%;
-  gap: 80px;
+  grid-template-columns:  minmax(0, 2fr) minmax(0, 3fr);
+  gap: 40px;
 }
 .faq > header .sec-header {
   text-align: left;
@@ -785,10 +816,18 @@
   max-width: 680px;
   margin: 0 0 20px;
 }
+.faq-container > * {
+  min-width: 0;
+}
+@media (max-width: 767px) {
+  .faq {
+    grid-template-columns: 1fr;
+  }
+}
 /* End FaQ */
 /* Start CTA */
 .cta {
-  padding: var(--section-padding) 0;
+  padding-block: var(--section-padding);
 }
 .cta .cta-overlay {
   position: relative;
@@ -832,31 +871,8 @@ footer {
 }
 footer .footer-grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  justify-content: space-between;
-  gap: 10px;
-  justify-items: end;
-}
-footer .footer-grid .col01 .logo {
-  display: flex;
-  gap: 10px;
-  font-weight: 700;
-  align-items: center;
-  letter-spacing: -1px;
-}
-footer .footer-grid .col01 .logo .brand-mark {
-  width: 31px;
-  height: 31px;
-  display: grid;
-  font-size: 17px;
-  place-items: center;
-  border-radius: 10px;
-  color: var(--accent);
-  background: var(--dark);
-}
-footer .footer-grid .col01 .logo .brand {
-  font-size: 19px;
-  color: var(--dark);
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 40px
 }
 footer .footer-grid .col01 .desc {
   font-size: 13px;
