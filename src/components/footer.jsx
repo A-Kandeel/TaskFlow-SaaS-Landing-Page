@@ -11,25 +11,25 @@ const Footer = () => {
         <div className="col col02">
           <p>Product</p>
           <ul>
-            <li><a href="#">Features</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">FAQ</a></li>
+            <li><a href="#Features">Features</a></li>
+            <li><a href="#Pricing">Pricing</a></li>
+            <li><a href="#FAQ">FAQ</a></li>
           </ul>
         </div>
         <div className="col col03">
           <p>Company</p>
           <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Blog</a></li>
+            <li><a href="#Hero">About</a></li>
+            <li><a href="#Hero">Careers</a></li>
+            <li><a href="#Hero">Blog</a></li>
           </ul>
         </div>
         <div className="col col04">
           <p>Resources</p>
           <ul>
-            <li><a href="#">Docs</a></li>
-            <li><a href="#">Support</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#Hero">Docs</a></li>
+            <li><a href="#Contact">Support</a></li>
+            <li><a href="#Contact">Contact</a></li>
           </ul>
         </div>
       </div>

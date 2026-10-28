@@ -3,7 +3,7 @@ import {Sparkles} from "lucide-react";
 
 const Hero = () => {
   return (
-    <div className="hero container">
+    <div className="hero container" id="Hero">
       <section className="text">
         <p className="eye-brrow"><span></span>Organize Projects Faster With AI</p>
         <h1 className="sec-title">Turn messy work into <span>clear momentum.</span></h1>
